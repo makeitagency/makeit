@@ -7,8 +7,8 @@ import { useState, useEffect } from "react";
 
 const heroImages = [
     { id: 3, src: "/images/3.png" },
-    { id: 1, src: "/images/1.png" },
-    { id: 2, src: "/images/2.png" },
+    { id: 1, src: "/images/1Nueva.png" },
+    { id: 2, src: "/images/2Nueva.png" },
 ];
 
 export default function Hero() {
@@ -47,18 +47,8 @@ export default function Hero() {
 
                     <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
                         <p className="text-lg md:text-xl text-brand-black/70 font-sans max-w-lg leading-relaxed">
-                            En <span className="font-bold">Make It</span> potenciamos marcas a través de estrategias creativas y diseño de alto impacto.
+                            En <span className="font-bold">Make It</span> trabajamos como consultora estratégica. Analizamos el negocio, definimos posicionamiento y diseñamos la dirección comercial y comunicacional para que la marca crezca de forma real, no improvisada.
                         </p>
-                        <Link
-                            href="#contacto"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
-                            }}
-                            className="px-10 py-5 bg-brand-black text-white rounded-full font-bold text-sm hover:bg-brand-stone transition-all transform hover:scale-105 active:scale-95 shadow-xl uppercase tracking-widest whitespace-nowrap"
-                        >
-                            Contact Us
-                        </Link>
                     </div>
                 </motion.div>
 
@@ -90,17 +80,6 @@ export default function Hero() {
                             </motion.div>
                         </AnimatePresence>
 
-                        {/* Progress Indicators */}
-                        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-                            {heroImages.map((_, idx) => (
-                                <button
-                                    key={idx}
-                                    onClick={() => setCurrentIndex(idx)}
-                                    className={`h-1 transition-all duration-700 rounded-full ${currentIndex === idx ? "w-12 bg-white" : "w-4 bg-white/40"
-                                        }`}
-                                />
-                            ))}
-                        </div>
                     </div>
                 </motion.div>
             </div>

@@ -1,10 +1,10 @@
 "use client";
 
 const items = [
+    { text: "Brand Strategy", type: "heading" },
+    { text: "Business Consulting", type: "heading" },
     { text: "MAKE IT REAL", type: "heading" },
-    { text: "CREATIVE MINDS", type: "heading" },
-    { text: "BRAND TRANSFORMATION", type: "heading" },
-    { text: "STRATEGIC VISION", type: "heading" },
+    { text: "Creative Minds", type: "heading" },
 ];
 
 export default function Ticker() {
@@ -16,7 +16,7 @@ export default function Ticker() {
                         {items.map((item, idx) => (
                             <span
                                 key={`${item.text}-${idx}`}
-                                className="font-heading text-lg md:text-xl text-white tracking-[0.2em] flex items-center gap-16"
+                                className="font-heading text-lg md:text-xl text-white tracking-wide flex items-center gap-16"
                             >
                                 {item.text}
                                 <span className="text-white/20 font-heading text-xl md:text-2xl">/</span>

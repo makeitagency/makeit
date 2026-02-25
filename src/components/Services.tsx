@@ -133,7 +133,7 @@ export default function Services() {
                                     <div className="w-16 h-16 rounded-2xl bg-brand-light-gray flex items-center justify-center text-brand-black group-hover:bg-brand-black group-hover:text-white transition-all duration-500 transform group-hover:rotate-6">
                                         {service.icon}
                                     </div>
-                                    <span className="font-heading text-4xl text-brand-black/5 group-hover:text-brand-stone/20 transition-colors duration-500">
+                                    <span className="font-heading text-4xl text-brand-black/30 group-hover:text-brand-stone/60 transition-colors duration-500">
                                         {service.id}
                                     </span>
                                 </div>
@@ -195,19 +195,23 @@ export default function Services() {
                     className="mt-16 md:mt-24 p-10 md:p-16 rounded-[4rem] bg-brand-black text-center text-white relative overflow-hidden"
                 >
                     <div className="relative z-10">
-                        <h4 className="text-4xl md:text-6xl lg:text-7xl mb-12 tracking-tighter leading-tight">
+                        <p className="text-xs font-bold uppercase tracking-widest text-brand-stone mb-4">¿Listos para dar el próximo salto?</p>
+                        <h4 className="text-4xl md:text-6xl lg:text-7xl mb-12 tracking-tighter leading-tight uppercase font-light">
                             ¿LISTOS PARA <br className="hidden md:block" /> EMPRENDER EL VIAJE?
                         </h4>
-                        <Link
-                            href="#contacto"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
-                            }}
-                            className="inline-block bg-brand-white text-brand-black px-12 py-6 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-brand-stone transition-all duration-500 shadow-xl"
-                        >
-                            HAGÁMOSLO REALIDAD
-                        </Link>
+                        <div className="space-y-4">
+                            <p className="text-[10px] font-bold uppercase tracking-widest text-brand-stone">si! quiero escalar mi marca</p>
+                            <Link
+                                href="#contacto"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
+                                }}
+                                className="inline-block bg-brand-white text-brand-black px-12 py-6 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-brand-stone transition-all duration-500 shadow-xl"
+                            >
+                                HAGÁMOSLO REALIDAD
+                            </Link>
+                        </div>
                     </div>
                     {/* Background Noise/Texture or decoration could go here */}
                     <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] pointer-events-none" />

@@ -190,7 +190,9 @@ export default function Projects() {
                     whileInView={{ opacity: 1 }}
                     className="mt-16 md:mt-32 pt-12 md:pt-20 border-t border-brand-black/5 text-center"
                 >
-                    <p className="font-heading text-brand-stone text-sm md:text-base uppercase tracking-[0.4em] mb-8">Let&apos;s make it real</p>
+                    <p className="font-sans text-brand-black/40 text-sm md:text-base uppercase tracking-tighter mb-8">
+                        Make It Powerful. Make It Bigger. 💎 Make It Expand. make it different...
+                    </p>
                     <Link
                         href="#contacto"
                         onClick={(e) => {
@@ -198,8 +200,8 @@ export default function Projects() {
                             document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
                         }}
                     >
-                        <h4 className="text-[8vw] text-brand-black tracking-tighter hover:text-brand-stone transition-colors cursor-pointer">
-                            LET&apos;S <span className="font-highlight">Make It</span> Real
+                        <h4 className="text-[8vw] text-brand-black tracking-tighter hover:text-brand-stone transition-colors cursor-pointer font-light">
+                            LET&apos;S <span className="font-bold">MAKE IT</span> REAL
                         </h4>
                     </Link>
                 </motion.div>

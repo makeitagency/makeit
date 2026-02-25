@@ -34,7 +34,10 @@ export default function Contact() {
 
                             <div className="space-y-10">
                                 <p className="text-xl md:text-2xl text-brand-black/60 leading-relaxed font-sans max-w-sm">
-                                    Estamos listos para transformar tu visión en una realidad digital de alto impacto. Escribinos y empecemos a crear.
+                                    Estamos listos para transformar tu visión en una realidad de alto impacto.
+                                </p>
+                                <p className="text-xl md:text-2xl text-brand-black/60 leading-relaxed font-sans max-w-sm">
+                                    Escribinos y empecemos a crear.
                                 </p>
 
                                 <div className="space-y-8 pt-10">
@@ -94,8 +97,8 @@ export default function Contact() {
                                 <Globe className="text-brand-black w-10 h-10" />
                             </div>
 
-                            <h3 className="text-4xl md:text-5xl font-black text-brand-black mb-6 tracking-tighter leading-tight italic uppercase">
-                                Reserva tu <br /> <span className="text-brand-stone not-italic">Reunión</span>
+                            <h3 className="text-4xl md:text-5xl font-black text-brand-black mb-10 tracking-tighter leading-tight uppercase">
+                                AGENDÁ TU REUNIÓN
                             </h3>
 
                             <p className="text-lg md:text-xl text-brand-black/50 leading-relaxed font-sans mb-12 max-w-sm">
@@ -124,11 +127,6 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <div className="mt-40 pt-16 border-t border-brand-black/5 flex flex-col md:flex-row justify-between items-center gap-8 italic text-brand-black/30 font-black text-sm tracking-widest select-none">
-                    <p>© 2024 MAKE IT STUDIO. ALL RIGHTS RESERVED.</p>
-                    <p className="font-heading font-black text-brand-stone text-base md:text-xl uppercase tracking-[0.3em] not-italic">Manu & Estefi</p>
-                    <p>CBA / BSAS - GLOBAL</p>
-                </div>
             </div>
         </section>
     );

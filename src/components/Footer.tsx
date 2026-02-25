@@ -10,7 +10,7 @@ export default function Footer() {
                         src="/logo.png"
                         alt="MAKE IT Logo"
                         fill
-                        className="object-contain invert grayscale mix-blend-multiply"
+                        className="object-contain p-1 rounded-lg"
                     />
                 </Link>
 

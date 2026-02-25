@@ -8,7 +8,7 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
     { name: "HOME", href: "#home" },
-    { name: "ABOUT", href: "#about" },
+    { name: "ABOUT US", href: "#about" },
     { name: "SERVICES", href: "#servicios" },
     { name: "PROJECTS", href: "#proyectos" },
 ];
@@ -40,7 +40,7 @@ export default function Navbar() {
                         src="/logo.png"
                         alt="MAKE IT Logo"
                         fill
-                        className="object-contain p-1.5 rounded-xl invert grayscale mix-blend-multiply"
+                        className="object-contain p-1.5 rounded-xl"
                         priority
                     />
                 </Link>
