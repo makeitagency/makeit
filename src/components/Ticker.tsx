@@ -1,5 +1,3 @@
-"use client";
-
 const items = [
     { text: "Brand Strategy", type: "heading" },
     { text: "Business Consulting", type: "heading" },

@@ -84,7 +84,7 @@ const services = [
         id: "06",
         title: "Estrategia de Marca",
         icon: <Target className="w-8 h-8" />,
-        description: "Definimos qué decir, a quién y para qué con un enfoque estratégico.",
+        description: "Desarrollamos marcas que quieren expandirse a través de estrategias de comunicación.",
         items: [
             "Posicionamiento",
             "Auditoría de marca",
@@ -168,10 +168,6 @@ export default function Services() {
                                 {/* Bottom: Action Button */}
                                 <Link
                                     href="#contacto"
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
-                                    }}
                                     className="mt-12 w-full h-16 bg-brand-black text-white rounded-full flex items-center justify-center gap-4 group/btn transition-all duration-300 hover:bg-brand-stone shadow-lg relative z-40"
                                 >
                                     <span className="text-[10px] font-bold uppercase tracking-widest">{service.cta}</span>
@@ -195,26 +191,20 @@ export default function Services() {
                     className="mt-16 md:mt-24 p-10 md:p-16 rounded-[4rem] bg-brand-black text-center text-white relative overflow-hidden"
                 >
                     <div className="relative z-10">
-                        <p className="text-xs font-bold uppercase tracking-widest text-brand-stone mb-4">¿Listos para dar el próximo salto?</p>
-                        <h4 className="text-4xl md:text-6xl lg:text-7xl mb-12 tracking-tighter leading-tight uppercase font-light">
-                            ¿LISTOS PARA <br className="hidden md:block" /> EMPRENDER EL VIAJE?
+                        <h4 className="text-4xl md:text-6xl lg:text-7xl mb-12 tracking-tighter leading-tight font-light">
+                            ¿Listos para dar <br className="hidden md:block" /> el próximo salto?
                         </h4>
                         <div className="space-y-4">
-                            <p className="text-[10px] font-bold uppercase tracking-widest text-brand-stone">si! quiero escalar mi marca</p>
                             <Link
                                 href="#contacto"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
-                                }}
-                                className="inline-block bg-brand-white text-brand-black px-12 py-6 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-brand-stone transition-all duration-500 shadow-xl"
+                                className="inline-block bg-brand-white text-brand-black px-12 py-6 rounded-full font-bold text-sm tracking-widest hover:bg-brand-stone transition-all duration-500 shadow-xl"
                             >
-                                HAGÁMOSLO REALIDAD
+                                Si quiero escalar mi marca
                             </Link>
                         </div>
                     </div>
-                    {/* Background Noise/Texture or decoration could go here */}
-                    <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] pointer-events-none" />
+                    {/* Background dot pattern */}
+                    <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
                 </motion.div>
             </div>
         </section>

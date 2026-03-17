@@ -58,25 +58,32 @@ export default function About() {
                             </h2>
 
                             <div className="space-y-8 max-w-2xl">
-
-                                <p className="text-lg md:text-xl text-brand-black/60 leading-snug font-sans">
-                                    Creamos estrategias personalizadas que fusionan creatividad, diseño y marketing digital. No somos solo una agencia, somos vuestros aliados estratégicos para construir marcas con propósito.
-                                </p>
-
-                                <div className="pt-4 space-y-4">
-                                    <div className="space-y-1">
-                                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-stone">Brand Strategy & Business Consulting</p>
-                                        <p className="text-lg font-heading text-brand-black">Consultoría creativa & estrategia de marca</p>
-                                        <p className="text-lg font-heading text-brand-black">Si tu negocio quiere crecer, <span className="italic">lo pensamos distinto.</span></p>
-                                    </div>
-
-                                    <p className="text-xs font-bold uppercase tracking-widest text-brand-stone mt-8">
-                                        Desarrollamos marcas que quieren expandirse a través de estrategias de comunicación. <br />
-                                        <span className="text-brand-black uppercase">No hacemos sólo marketing. Construimos negocios con visión.</span>
+                                <div className="text-lg md:text-xl text-brand-black/60 leading-relaxed font-sans">
+                                    <p className="mb-8">
+                                        Creamos estrategias personalizadas que fusionan creatividad, diseño y marketing digital. No somos solo una agencia.
                                     </p>
+                                    
+                                    <div className="space-y-6">
+                                        <p className="font-heading text-3xl md:text-4xl text-brand-black leading-tight italic">
+                                            Desarrollamos marcas que quieren expandirse a través de estrategias de comunicación.
+                                        </p>
+                                        <p className="text-sm font-bold uppercase tracking-[0.2em] text-brand-black">
+                                            No hacemos sólo marketing. <span className="text-brand-stone">Construimos negocios con visión.</span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
+                            {/* Closure Section - Designer Feedback */}
+                            <div className="mt-16 pt-12 border-t border-brand-black/5">
+                                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-brand-stone mb-4">Brand Strategy & Business Consulting</p>
+                                <h3 className="text-3xl md:text-5xl font-heading text-brand-black leading-tight tracking-tighter">
+                                    Si tu negocio quiere crecer, <br />
+                                    <span className="italic text-brand-stone">lo pensamos distinto.</span>
+                                </h3>
+                            </div>
+
+                            {/* Founders Names - At the very bottom */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 pt-16 border-t border-brand-black/10">
                                 <motion.div
                                     whileHover={{ y: -5 }}

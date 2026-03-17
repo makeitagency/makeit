@@ -33,6 +33,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
                 <Link
                     href="/"
+                    aria-label="MAKE IT Studio — Inicio"
                     className="relative h-12 w-12 group transition-all duration-300 transform hover:scale-110 active:scale-95"
                 >
                     <div className="absolute inset-0 bg-brand-black/5 rounded-xl transition-colors group-hover:bg-brand-black/10" />
@@ -51,14 +52,14 @@ export default function Navbar() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className={`text-sm font-bold tracking-widest transition-all duration-300 hover:text-brand-stone ${scrolled ? "text-brand-black" : "text-brand-black"
-                                }`}
+                            className="text-sm font-bold tracking-widest transition-all duration-300 hover:text-brand-stone text-brand-black"
                         >
                             {link.name}
                         </Link>
                     ))}
                     <Link
                         href="#contacto"
+                        aria-label="Contactanos"
                         className="px-8 py-3 bg-brand-black text-white rounded-full text-xs font-bold tracking-[0.2em] hover:bg-brand-stone transition-all transform hover:scale-105"
                     >
                         CONTACT US
@@ -66,7 +67,12 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile Toggle */}
-                <button className="md:hidden text-brand-black" onClick={() => setIsOpen(!isOpen)}>
+                <button
+                    className="md:hidden text-brand-black"
+                    onClick={() => setIsOpen(!isOpen)}
+                    aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+                    aria-expanded={isOpen}
+                >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </div>

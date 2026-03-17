@@ -42,13 +42,13 @@
   --font-signature: var(--font-damion);
 
   @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
 
-    100% {
-      transform: translateX(-50%);
-    }
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
   }
 }
 
@@ -105,7 +105,17 @@
   .marquee-content {
     display: flex;
     width: fit-content;
-    animation: marquee 30s linear infinite;
+    animation: marquee 50s linear infinite;
+  }
+
+  .marquee-content-reverse {
+    display: flex;
+    width: fit-content;
+    animation: marquee-reverse 60s linear infinite;
+  }
+
+  .marquee-content:hover, .marquee-content-reverse:hover {
+    animation-play-state: paused;
   }
 
   .minimal-input {

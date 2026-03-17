@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
             animate={{ scale: 1, opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="fixed bottom-8 right-8 z-100 group"
+            className="fixed bottom-8 right-8 z-50 group"
         >
             {/* Pulse Effect */}
             <div className="absolute inset-0 rounded-full bg-brand-stone opacity-50 animate-ping group-hover:animate-none" />
