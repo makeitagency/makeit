@@ -48,7 +48,7 @@ export default function About() {
                             transition={{ duration: 0.8 }}
                         >
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="h-[2px] w-12 bg-brand-stone" />
+                                <div className="h-0.5 w-12 bg-brand-stone" />
                                 <span className="font-heading text-brand-black tracking-widest text-sm uppercase">About the minds</span>
                             </div>
 

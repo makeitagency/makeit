@@ -56,7 +56,7 @@ export default function Hero() {
                     initial={{ opacity: 0, scale: 0.9, x: 50 }}
                     animate={{ opacity: 1, scale: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                    className="lg:col-span-12 xl:col-span-5 relative h-[400px] sm:h-[500px] lg:h-[600px] w-full mt-8 lg:mt-0"
+                    className="lg:col-span-12 xl:col-span-5 relative h-100 sm:h-125 lg:h-150 w-full mt-8 lg:mt-0"
                 >
                     <div className="relative w-full h-full rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl">
                         <AnimatePresence mode="wait">
