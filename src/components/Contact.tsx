@@ -51,8 +51,8 @@ export default function Contact() {
                                         {
                                             icon: <MessageCircle size={20} />,
                                             label: "WhatsApp",
-                                            value: "+54 9 2215 02-7463",
-                                            href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5492215027463"}`
+                                            value: "+54 9 2215 69-7977",
+                                            href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5492215697977"}`
                                         },
                                         {
                                             icon: <Instagram size={20} />,
